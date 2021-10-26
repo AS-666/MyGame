@@ -14,12 +14,12 @@ public class MoveController : MonoBehaviour
 
     private void Update()
     {
-        CheckKeyPressedAndMove(KeyCode.W, Vector3.up);
-        CheckKeyPressedAndMove(KeyCode.S, Vector3.down);
+        CheckKeyPressedAndMove(KeyCode.Space, Vector3.up);
+        CheckKeyPressedAndMove(KeyCode.LeftShift, Vector3.down);
         CheckKeyPressedAndMove(KeyCode.A, Vector3.left);
         CheckKeyPressedAndMove(KeyCode.D, Vector3.right);
-        CheckKeyPressedAndMove(KeyCode.E, Vector3.forward);
-        CheckKeyPressedAndMove(KeyCode.Q, Vector3.back);
+        CheckKeyPressedAndMove(KeyCode.W, Vector3.forward);
+        CheckKeyPressedAndMove(KeyCode.S, Vector3.back);
     }
 
     private void CheckKeyPressedAndMove(KeyCode keyCode, Vector3 direction)
